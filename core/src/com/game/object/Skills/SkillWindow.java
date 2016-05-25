@@ -83,8 +83,10 @@ public class SkillWindow {
                 if (target == null) {
 
                 } else {
-                    Skill_Info skills = (Skill_Info) source;
-                    ((Image)target.getActor()).setDrawable(((Skill_Info) source).getSkillImage().getDrawable());//new TextureRegionDrawable(((Skill_Info) source).getSkillImage()));
+//                    Skill_Info skills = (Skill_Info) source;
+//                    ((Image)target.getActor()).setDrawable(((Skill_Info) source).getSkillImage().getDrawable());//new TextureRegionDrawable(((Skill_Info) source).getSkillImage()));
+
+                    ((Image)target.getActor()).setDrawable(((Skill_Info) source).getSkillImage().getDrawable());
                     //skill = ((Skill_Info) source).getSkillImage();
                     //skill.setImageSkill(skills.getSkillImage());
 

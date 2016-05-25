@@ -40,7 +40,6 @@ public class SkillBar {
     private ArrayList<Actor> skill_block;
     private NinePatch noCheckTexture = new NinePatch (new Texture(Gdx.files.internal ("res/gui/SkillBar/NoCheck.png")),9,9,9,9);
     private NinePatch checkTexture = new NinePatch (new Texture (Gdx.files.internal ("res/gui/SkillBar/Check.png")),9,9,9,9);
-    public static ArrayList<SkillSlot> validActor;
     public static Player player;
 
     public SkillBar(Player player) {
@@ -101,15 +100,14 @@ public class SkillBar {
 
             @Override
             public boolean drag(Source source, Payload payload, float x, float y, int pointer) {
-
                 getActor().setColor(Color.GREEN);
                 return valid;
             }
 
             @Override
             public void drop(Source source, Payload payload, float x, float y, int pointer) {
-                Skill_Info skill = (Skill_Info) source.getActor();
-                payload.setObject(skill.getSkillImage());
+//                Skill_Info skill = (Skill_Info) source.getActor();
+//                payload.setObject(skill.getSkillImage());
             }
         };
         return target;
